@@ -1,0 +1,32 @@
+.carousel-final {
+    display: flex;
+    flex-direction: column;
+    /* para que el h2 quede arriba */
+    align-items: center;
+    /* centra horizontalmente */
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    width: 600px;
+    height: 400px;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 400px
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-inner {
+    position: relative;
+    align-items: center;
+    height: 700px;
+    width: 600px;
+}

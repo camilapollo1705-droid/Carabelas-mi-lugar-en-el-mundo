@@ -1,0 +1,9 @@
+@use "../utilities/variable";
+main {
+    background-color: variable.$color-fondomain;
+    background-size: cover;
+    justify-content: center;
+    padding: 10px;
+    top: 0px;
+    z-index: 100;
+}

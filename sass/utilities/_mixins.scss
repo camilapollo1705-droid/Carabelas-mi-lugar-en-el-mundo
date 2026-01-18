@@ -1,0 +1,19 @@
+@mixin img-paginaprincipal {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    padding: 3px;
+    border: 5px solid 5px;
+    margin: 30px;
+}
+
+.imagenestacion {
+    @include img-paginaprincipal;
+    left: 300px;
+    right: 0px;
+}
+
+.imagencartel {
+    @include img-paginaprincipal;
+    left: 0px;
+}

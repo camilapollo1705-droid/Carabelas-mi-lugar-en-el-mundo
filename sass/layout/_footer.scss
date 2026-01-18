@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(18, 54, 112, 1) 0%, rgba(95, 145, 184, 1) 28%, rgba(67, 141, 171, 1) 50%, rgba(47, 144, 168, 1) 74%, rgba(18, 54, 112, 1) 100%);
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+    ul li {
+        list-style: none;
+        text-align: left;
+        color: rgb(4, 31, 42);
+    }
+    .btn {
+        size: small;
+        align-items: center;
+    }
+    span {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        text-decoration: underline;
+        color: rgb(255, 0, 106);
+    }
+}
