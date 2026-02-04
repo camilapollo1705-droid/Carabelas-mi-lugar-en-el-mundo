@@ -5,8 +5,11 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .paginaprincipal {
@@ -38,11 +41,8 @@ body {
   align-items: center;
   width: 400px;
   height: 300px;
-  padding: 3px;
   border: 5px solid 5px;
-  margin: 20px;
   left: 0px;
-  gap: 5px;
 }
 
 .ubicacion {
@@ -68,7 +68,6 @@ body {
   border: 5px solid 5px;
   border-radius: 10%;
   left: 0px;
-  right: 10px;
 }
 .ubicacion ul li {
   list-style: circle;
@@ -110,7 +109,7 @@ h2 {
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  width: 1000px;
+  width: 100%;
   gap: 5px;
   justify-content: center;
 }
@@ -134,7 +133,7 @@ header h1 {
   animation-iteration-count: infinite;
   color: rgba(33, 255, 162, 0.975);
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 @keyframes aparecer {
@@ -242,7 +241,7 @@ main {
 .carousel-inner {
   position: relative;
   align-items: center;
-  height: 700px;
+  height: 500px;
   width: 600px;
 }
 
@@ -252,7 +251,7 @@ footer {
   background: linear-gradient(90deg, rgb(18, 54, 112) 0%, rgb(95, 145, 184) 28%, rgb(67, 141, 171) 50%, rgb(47, 144, 168) 74%, rgb(18, 54, 112) 100%);
   background-size: cover;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   z-index: 10;
 }
 footer ul li {
@@ -271,33 +270,34 @@ footer span {
   color: rgb(255, 0, 106);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
   header {
-    text-align: center;
-    font-size: small;
-    display: flex;
-    flex-direction: column;
-  }
-  header nav ul {
-    flex-direction: row;
-    padding: 0;
-    gap: 5px;
-  }
-  header nav ul li a {
-    font-size: 13px;
+    padding: 5px 0;
   }
   header h1 {
-    font-size: 20px;
-    margin-bottom: 14px;
+    font-size: 24px;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+  header nav ul li a {
+    font-size: 14px;
+    white-space: nowrap;
   }
   .pagina-imagenes {
     display: grid;
@@ -347,7 +347,7 @@ footer span {
     font-size: 14px;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    width: auto;
+    width: 100%;
     gap: 3px;
   }
   .historia img {
@@ -357,7 +357,7 @@ footer span {
     height: auto;
     padding: 3px;
     border: 5px solid 5px;
-    margin: 20px;
+    margin: 10px 0;
     left: 0px;
     gap: 5px;
   }
@@ -422,7 +422,8 @@ footer span {
     justify-content: center;
     height: 80%;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+    box-sizing: border-box;
   }
   footer div {
     display: flex;

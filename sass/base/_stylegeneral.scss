@@ -1,6 +1,9 @@
 body {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .paginaprincipal {
@@ -31,11 +34,8 @@ body {
         align-items: center;
         width: 400px;
         height: 300px;
-        padding: 3px;
         border: 5px solid 5px;
-        margin: 20px;
         left: 0px;
-        gap: 5px
     }
 }
 
@@ -61,7 +61,6 @@ body {
         border: 5px solid 5px;
         border-radius: 10%;
         left: 0px;
-        right: 10px;
     }
     ul li {
         list-style: circle;
@@ -104,7 +103,7 @@ h2 {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    width: 1000px;
+    width: 100%;
     gap: 5px;
     justify-content: center;
 }
